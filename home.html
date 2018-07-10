@@ -1,0 +1,782 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<style>
+    html{
+	overflow-x: hidden;
+	max-width: 100%;}
+	
+    body{
+      color: #00147c;
+	  background-color: #000000;
+      margin: 0px;
+
+    }
+
+    header{
+      margin: 0px;
+      background-color: #00147c;
+      color: #bcbcbc;
+      font-size:53px;
+      font-face:sans-serif;
+    }
+
+    .nav-bar {
+      list-style-type: none;
+	  margin: 0;
+	  box-shadow: 2px;
+      padding: 0;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      position: fixed;
+      top: 00px;
+      width: 100%;
+	  shadow: 5px;
+	  box-shadow: 5px 5px 5px #999;
+      -moz-box-shadow: 5px 5px 5px #999;
+      -webkit-box-shadow: 5px 5px 5px #999;
+	  text-decoration: u;
+   }  
+    
+	.active .nav-bar li a {
+	  background-color:#1f9f58;}
+
+     .nav-bar li a {
+	 
+	  text-decoration: none;
+      display: block;
+      padding: 14px 26px;
+      background-color: #f1f1f1;
+      color: #1f9f58;
+    font-family: 'Merriweather Sans', sans-serif;	  
+font-size: 24px;
+    
+	}
+
+
+    li {
+      float: right;
+	}
+
+/*Change link color to #111(black) on hover*/
+
+    li a:hover{
+      background-color: #111111;
+      color: white;
+	  transition: background-color:0.3s;
+	}
+
+    h2{color:white;
+          font-family: 'Aldrich', sans-serif; 
+	  font:2em ;
+	  text-decoration: none;
+	  text-align:center;
+	 
+	  	}
+
+    .active {
+      background-color: #4CAF50;
+	}
+	
+    h1{font-size:45px;
+      text-decoration: underline;
+      color:#1f9f58;
+	  padding: 60px;
+font-family: 'Bungee', cursive;
+      magin-left: 25px;
+	  text-align: left;
+	}
+	
+	h6{
+	  font-size: 1px;
+	}
+	
+	h3{
+	  font-size:30px;
+      }
+
+	 
+	.event{
+	  float: center;
+	  
+	  
+	}
+	
+	.one{
+      width: 300px;
+      height: 300px;
+      padding: 15px;
+      background-color: #f1f1f1;
+	  border-style: inset ;
+	  border-width: 2px;
+	  border-color: black;
+	  text-align: center;
+	  border-radius: 25px;
+	  box-sizing: border-box;
+	  box-shadow:2px 2px grey;
+	}
+
+	/*make shadow visible when hover*/
+	
+	.one:hover{
+	  
+	 box-shadow: 15px 15px 8px #1f9f58;
+	 -10px 8px 15px gray, 10px 8px 15px gray;
+	}
+	
+	ol{
+	list-style-type: none;
+	color: #444444;
+		text-align:center;}
+	
+	.button{
+	  background-color: #1f9f58;
+	  color:lightgrey;
+	  border-radius: 80px;
+	  cursor: pointer;
+	  padding: 20px 35px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font:35px 'Lobster', cursive;;
+	  margin: 5px;
+	  border-style: dotted;
+          
+    
+
+	  
+	}
+	
+	.footer{
+	color: black;
+	background-color: white;
+	width: 100%;
+	}
+	
+	.png{border-style:solid;
+	border-color:white;
+	border-width:10px;
+	border-radius:20em;}
+   div{
+   float: inline;}
+   
+   .bla{
+   display: inline-block;}
+	
+table{text-align:center;
+border-spacing:25px;
+align: left;
+overflow-x:hidden;}
+
+h6{font:20px sans-serif}
+
+iframe{border-style:ridge groove;
+border-color:blue;}
+
+.location{
+background-color:#101010;}
+
+.events{
+color:#00bc00;
+border-radius: 10px;
+padding:50px;
+background-color: #004700;
+text-align: center;
+cursor: help;
+font:1em ;
+
+background-attachment: fixed;
+background-repeat: "";
+font-family: 'Fjalla One', sans-serif;
+text-decoration:none;
+}
+
+.events:hover{
+text-decoration:none;
+color:#00e100;
+background-color: #1f9f58;
+box-shadow: 2px 2px 2px grey;
+transition: 0.4s;}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+embed{
+  display: hidden;
+}
+
+footer{
+  background-color:#101010;
+  margin:0px;
+}
+
+.rules{
+  float:left;
+  color:blue;
+  overflow-x: hidden;
+  line-height: 70px;
+  font-size:30px;
+}
+
+.contact-font{
+  font: 50px;
+  }
+
+  p {
+  text-align: center;
+  color:white;
+  font-size: 60px;
+}
+  
+  .cntdwn{
+  background-image:url("cntdwn.gif");
+  background-attachment:fixed;
+}
+
+.loader-div{
+	background-color:#222;
+	height:100%;
+	width:100%;
+	position: fixed;
+	z-index:999999999999999999;
+}
+
+.loader {
+  position:absolute;
+  left:47%;
+  top:47%;
+  width: 50px;
+  height: 90px;
+}
+
+.loader div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  animation: loading 1.2s infinite ease-in-out;
+  -webkit-animation: loading 1.2s infinite ease-in-out;
+  -o-animation: loading 1.2s infinite ease-in-out;
+  -moz-animation: loading 1.2s infinite ease-in-out;
+}
+
+.loader .rect2 {
+  animation-delay: -1.1s;
+  -webkit-animation-delay: -1.1s;
+  -moz-animation-delay: -1.1s;
+  -o-animation-delay: -1.1s;
+}
+
+.loader .rect3 {
+  animation-delay: -1.0s;
+  -webkit-animation-delay: -1.0s;
+  -o-animation-delay: -1.0s;
+  -moz-animation-delay: -1.0s;
+}
+
+.loader .rect4 {
+  animation-delay: -0.9s;
+  -webkit-animation-delay: -0.9s;
+  -o-animation-delay: -0.9s;
+  -moz-animation-delay: -0.9s;
+}
+
+.loader .rect5 {
+  animation-delay: -0.8s;
+  -webkit-animation-delay: -0.8s;
+  -o-animation-delay: -0.8s;
+  -moz-animation-delay: -0.8s;
+}
+
+@keyframes loading {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+    -moz-transform: scaleY(0.4);
+    -o-transform: scaleY(0.4);
+  }  
+  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+    -o-transform: scaleY(1.0);
+    -moz-transform: scaleY(1.0);
+  }
+}
+
+@-webkit-keyframes loading {
+  0%, 40%, 100% {
+  	-webkit-transform: scaleY(0.4) 
+  }  
+  20% { 
+  	-webkit-transform: scaleY(1.0) 
+  }
+}
+
+@-o-keyframes loading {
+  0%, 40%, 100% {
+  	-o-transform: scaleY(0.4) 
+  }  
+  20% { 
+  	-o-transform: scaleY(1.0) 
+  }
+}
+
+@-moz-keyframes loading {
+  0%, 40%, 100% {
+  	-moz-transform: scaleY(0.4) 
+  }  
+  20% { 
+  	-moz-transform: scaleY(1.0) 
+  }
+}
+
+.abt{
+  background-color: #101010;}
+  
+   .member-font{
+   color:#00bc00 }
+   
+  .member-font:hover{
+  color: #00e100;
+  }
+  
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+.contact-us{
+ background-image: url("contact-back.png" );
+    background-size: 100% auto;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.imgbox{
+  width:25px;
+  height: 25px;
+  background-image: url("fb b.png");
+  background-size: 25px 25px;
+}
+
+.imgbox:hover{
+background-image: url("fb c.png");
+background-size: 25px 25px;}
+
+.pyrotech{
+background-image: url("pyrotech logo.png");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position:center;
+color:rgb(255, 255, 255);}
+</style>
+<script src="script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Emblema+One|Aladin|Aldrich|Kavivanar|Bungee|Sedgwick+Ave+Display|Fjalla+One|Lobster|Merriweather+Sans|Mr+Bedfort|Oswald|Encode+Sans+Expanded" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" />
+<title>Ordin@trix 18.o </title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Made with WOW Slider - Create beautiful, responsive image sliders in a few clicks. Awesome skins and animations. Bootstrap slideshow" />
+	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+
+</head>
+<body>
+<!--Loader Div-->
+<div class="loader-div">
+  <div class="loader">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div>
+</div>
+<script>
+//Loader
+$(window).load(function(){
+  $('.loader').fadeOut("slow");
+  $('.loader-div').delay(1000).fadeOut("slow");
+});
+</script>
+<script>
+//Smooth Scroll
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+<ul class="nav-bar">
+         <li><a href="#Contact">Contact Us</a></li>
+         <li><a href="#location">Venue</a>
+         <li><a href="#events">Events</a>
+		 <li><a href="#register">Register</a></li>
+		 <li><a href="#AU">About Us</a></li>
+		 <li><a href="home.html">Home</a></li>
+         <li style="float: left; margin:2px 0px;font-family: 'Kavivanar', cursive;font-size: 40px; color:#065b2c;" height="14px" width="16px">Ordin@trix 18.o</li>
+		 </ul>
+<br><br><br>
+<center><!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="data1/images/1.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/2.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/4.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/3.jpg" alt="" title="" id="wows1_3"/></li>
+		<li><img src="data1/images/5.jpg" alt="" title="" id="wows1_4"/></li>
+		<li><img src="data1/images/6.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><img src="data1/images/7.jpg" alt="" title="" id="wows1_6"/></li>
+		<li><img src="data1/images/8.jpg" alt="" title="" id="wows1_7"/></li>
+		<li><img src="data1/images/9.jpg" alt="" title="" id="wows1_8"/></li>
+		<li><img src="data1/images/10.jpg" alt="" title="" id="wows1_9"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/11.jpg" alt="jquery slider" title="" id="wows1_10"/></a></li>
+		<li><img src="data1/images/12.jpg" alt="" title="" id="wows1_11"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data1/tooltips/1.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/2.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/4.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/3.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/5.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/6.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/7.jpg" alt=""/>7</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/8.jpg" alt=""/>8</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/9.jpg" alt=""/>9</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/10.jpg" alt=""/>10</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/11.jpg" alt=""/>11</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/12.jpg" alt=""/>12</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap slideshow</a> by WOWSlider.com v8.8</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+
+	<div class="Abt"
+><div id="Ordin@trix"><h1 id="AU" style="color: #1f9f58; ">Ordin@trix 18.0 </h1>
+         <h2 style=" color:white;"> It all started 13 years ago. A fusion of creativity, talent and skill is what Ordin@trix is
+		 all about. Ordin@trix has evolved through the years moving from an interschool festival at the 
+		 state level to an international event. Over the years we have had students from China, Muscat,
+		 Japan and other countries as regular participants.
+     <br><br>
+     The event has witnessed gracious presence of 
+		 celebrities like Mr. Amol Gupte and Miss Manju Singh apart from experts from various technical 
+		 fields. The movies showcased here have been screened at the movie festivals by PVR Cinemas and
+		 CHINH India Festival.</h2>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+         <br><br><br><br>
+		 <div class="register"><div class="justsomeshit">
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqTmoDnckKa7xaqwh9bXsUSFqjGmh4f9rKwxWCtg-aDXOrhg/viewform?usp=sf_link" class="button" id="register" target="blank">Register</a>
+		    </div></div> 
+			<br><br><div class="cntdwn"><br>
+			<h2 style="font-size:50px;"> HURRY UP!</h2><br><h2 style="font-size:30px; color: #f9f9f9;">Event Starts In-</h2>
+			<p id="demo" ></p>
+			<h2 style="text-align:right; font-size:30px;">1<sup>st</sup> Aug 2018&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2>
+        <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 1, 2018 08:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time	
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+</div>
+      </div>
+
+<div class="location">
+<h1 id="location">Find Us Here</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7008.233786192498!2d77.15736990229725!3d28.566252389974288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1da64b31037f%3A0x9fe8114b5940d45c!2sTagore+International+School!5e0!3m2!1sen!2sin!4v1513607065658" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<br><br></div><br><br><br>
+    <div id="events"><br><br>
+	<h1 id="events">Events</h1>
+	
+
+<center><div id="bla" class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-7" style="padding-left:25px;">
+    
+     
+<center>
+<table>
+<tbody><tr><td>      
+<div class="events">
+    <div class="row">
+   <a HREF="CODE.html">
+  <div class="col-md-4">
+    <div class="team">
+      <center>
+     
+        <img src="events/anim.png" class="img-responsive">
+        
+		<h3 class="member-font">
+          Code@trix
+        </h3>
+      
+      </center>
+   </div>   
+</div>
+  </div>
+</div></a></td>
+<td>  <a href="script@trix.html"><div class="col-md-4" bgimage="script@trix.jpeg">
+    <div class="team">
+      <div class="events">
+      
+        <img src="events/script.png" class="img-responsive">
+        <h3 class="member-font">
+          
+		  Script@trix
+        </h3>
+      
+     </div>
+   </div>
+  </div>
+</a>
+</td>
+<td>
+<div class="events">
+<div class="row">
+<a href="bot.html">
+  <div class="col-md-4">
+    <div class="team">
+      
+      
+        <img src="events/bot.png" class="img-responsive">
+        
+		<h3 class="member-font">
+          Bot@trix
+        </h3>
+      
+      </div> 
+    </div>
+  </div>
+</div></a></td>
+</tr><tr>
+
+<td><div class="events">
+  <a href="movie@trix.html">
+  <div class="col-md-4">
+    <div class="team">
+      
+      
+        <img src="events/movie.png" class="img-responsive">
+        
+		<h3 class="member-font">
+		
+          Movie@trix
+		 
+        </h3>
+      
+     </div>   
+    </div>
+  </div>
+</a></td>
+  <td>
+<div class="events"><a href="snap.html"><div class="col-md-4">
+    <div class="team">
+      
+      
+        
+		<img src="events/snap.png" class="img-responsive img-circle">
+        
+		<h3 class="member-font">
+		
+          Snap@trix
+		  
+        </h3>
+      
+      
+    </div>
+   </div>
+  </div>
+</a></td>
+
+<td>
+<div class="events">
+<div class="row"><a href="ingenuin@trix.html">
+  <div class="col-md-4">
+    <div class="team">
+        
+        <img src="events/stun.png" class="img-responsive">
+        <h3 class="member-font">
+          Ingenuin@trix
+        </h3>
+      
+      
+    </div>
+  </div>
+</a></div>
+</div></td>
+
+</tr></tbody></table></center>
+<br><br><br><br>
+
+<br><br><br><br>
+<br>
+<embed src="matrix.mp3" autoplay="" hidden="true" loop=""></embed>
+</div>
+</div>
+</center>
+</div>
+</center>
+<h1>Program Schedule</h1>
+<center><img src="schedule.png" width="750px" height="500px"></center>
+<div class="pyrotech"><h1>Pyrotech Club</h1>
+<h2 style=" color:white;"> 
+
+Since it's conception, Ordin@trix has come a long way and so have the PYROTECHS.
+They are the very nuclei of Ordin@trix, who create fireworks in the field of technology. They breathe life into Ordin@trix.
+     <br><br>
+     
+PYROTECH members are an elite team of student computer enthusiasts. They have represented the school in various competitions and won laurels in events such as web designing, software development, image editing, movie making, 3-D modelling, photography and others.
+<br><br><br><br>
+</h2><h2 style="font-size: 30px; color: rgb(0,225,0);"><b><i>" Pyrotech is our brand name and we are known for <br>our burning desire and passion to promote technology."</i></b>
+</h2></div>
+<br><br><br>
+<div class="contact-us" id="Contact"><br>
+<h6 style="color: #fff; font-size: 36px; text-align:center;">Contact Us</h6><center>
+<p>@</p><p style="font-size: 26px;">mail us at<br><b>ordinatrix10@gmail.com</b></p></center><br>
+</div>
+<div class="footer" style="text-align: center;"><br>
+<center><a href="https://www.facebook.com/events/164980130772016/" target="blank" alt="Visit Our Facebook Page"><div class="imgbox"></div></a></center>
+<h5 style="font-family: 'Kavivanar', cursive; font-size: 1em;">site designed and developed by<br><a href="https://www.facebook.com/profile.php?id=100010345936790" style=" text-decoration:none;">Namya Chhabra</a> & Vansh Saigal<br>Pyrotech Club, Tagore International School,<br>Vasant Vihar
+</div>
+</body>
+</html>
